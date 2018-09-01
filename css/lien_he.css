@@ -1,0 +1,29 @@
+#main{
+	width: 100%;
+	height: auto;
+}
+.div_main{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.div_main .main_3{
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 30px;
+	text-transform: capitalize;
+}
+.div_main .dot{
+	width: 100px;
+	height: 4px;
+	background: #ff9600;
+	margin-left: 47%;
+	margin-top: 30px;
+}
+#but{
+	color: #fff;
+	text-transform: uppercase;
+	font-style: 20px;
+	background: #d66868;
+	margin-top:30px;
+	margin-bottom:30px;
+}
