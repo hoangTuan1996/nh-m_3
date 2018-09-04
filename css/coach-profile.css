@@ -1,0 +1,56 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.coach-infomation{
+	float: left;
+	height: auto;
+	padding: 0;
+}
+.row{
+	margin: 0;
+}
+.container{
+	padding: 0;
+	margin: 0 auto;
+	width: 90%;
+}
+.l-info,.r-info,.info-coach{
+	padding: 0;
+}
+.center-block{
+	margin: 0 auto;
+}
+.main-info-coach{
+	padding: 30px;
+	margin-top: 80px;
+	border: 1px solid #333;
+	box-shadow: 2px 2px 2px #333;
+	background: #fff;
+}
+.out-info{
+	padding: 15px;
+	box-shadow: 0px 0px 5px #333;
+	padding-bottom: -30px;
+	height: 750px;
+	margin-top: 20px;
+}
+.info-coach{
+	padding-left: 15px;
+	padding-right: 15px;
+	height: auto;
+}
+.out-info img{
+	border-radius: 100%;
+}
+.out-info h2{
+	font-weight: bold;
+	padding-left: 20px;
+	font-size: 33px;
+}
+.out-info h4{
+	padding-left: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
