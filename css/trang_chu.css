@@ -1,0 +1,368 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+/*header ------------------------------------------ */
+header{
+	width: 100%;
+	z-index: 99999;
+	background: #333;
+	position: fixed;
+	top: 0;
+	margin-bottom:50px;
+	box-shadow: 2px 2px 2px red;
+}
+#logo{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#menu{
+	padding-right: 0px;
+}
+#menu ul{
+	margin-top: 30px;
+}
+#menu .menu_item{
+	list-style:none;
+	float: left;
+	margin-left: 25px;
+	position: relative;
+}
+#menu .menu_item a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#menu .menu_item ul {
+	position: absolute;
+	margin-top:5px;
+	display: none;
+}
+#menu .menu_item ul li.menu_item{
+	width: 100px;
+	height: auto;
+	padding-left: 20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+#menu .menu_item ul li.menu_item:hover{
+	background: blue;
+	border-bottom: 1px solid #fff;
+
+}
+#menu .menu_item:hover ul li.menu_item{
+	display: block;
+}
+#ul_main{
+	margin-left:-40px;
+}
+/*end header*/
+
+#main{
+	margin-top: 93px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	
+}
+#main .img{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+ #main #prev{
+	position: absolute;
+	top: 40%;
+	font-size: 50px;
+	left: 20px;
+	background: red;
+	padding:5px 10px;
+	color: #fff;
+}
+#main #next{
+	position: absolute;
+	top: 40%;
+	font-size: 50px;
+	right: 20px;
+	background: red;
+	padding:5px 10px;
+	color: #fff;
+}
+#mani_conten{
+	width: 100%;
+	float: left;
+}
+ #p_1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+ #dot{
+	width: 70px;
+	height: 3px;
+	background:#d11b1b;
+	margin-left: 46%;
+	margin-bottom: 50px;
+	text-transform: capitalize;
+}
+#hieu_ung{
+	width: 100%;
+	height:auto;
+	float: left;
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+#hieu_ung .sp {
+  position: relative;
+   padding-left: 0px;
+  padding-right: 0px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+ #hieu_ung .sp .image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+ #hieu_ung .sp .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+ #hieu_ung .sp:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 0.5;
+}
+
+ #hieu_ung .sp .overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-transform:capitalize;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#huan_luyen_vien{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#huan_luyen_vien .gioi_thieu .tieude{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+#huan_luyen_vien .gioi_thieu .p2{
+	width: 70px;
+	height: 3px;
+	background:#d11b1b;
+	margin-left: 46%;
+	margin-bottom: 50px;
+}
+#huan_luyen_vien .ha_hlv{
+	float: left;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	width: 530px;
+	margin-right: 20px;
+	box-shadow: 2px 2px 2px 2px #333;
+}
+.demo_clue{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.demo_clue .clue{
+	position: relative;
+	margin-bottom: 30px;
+}
+.demo_clue .clue .a_clue{
+	text-decoration: none;
+}
+.demo_clue .clue .a_clue .img_clue{
+	height: 200px;
+	width: 475px;
+	transition: all 1s ease-in;
+}
+.demo_clue .clue .hover_clue{
+	position: absolute;
+	height: 200px;
+	width: 475px;
+	background: red;
+	opacity: 0.4;
+	bottom: -100%;
+	cursor: pointer;
+	padding:100px;
+	transition: 0.5s;
+	display: none;
+}
+.demo_clue .clue .hover_clue .a_clue{
+	color: #fff;
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.demo_clue .clue:hover .hover_clue{
+	display: block;
+	transition: 0.5;
+	top: 0;
+	box-shadow: 4px 4px 4px #333;
+	border: 4px solid blue;
+}
+.anh_hoi_vien{
+	float: left;
+	width: 100%;
+	height: auto;
+	background:url('../img/bg3.jpg');
+	background-repeat: no-repeat;
+	background-attachment :fixed;
+	background-position: center;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+.anh_hoi_vien .div_hoi_vien{
+	height: auto;
+	margin-top: 50px;
+	float: left;
+	margin-bottom: 50px;
+}
+.anh_hoi_vien .div_hoi_vien .a_hoi_vien{
+	text-decoration: none;
+}
+.anh_hoi_vien .div_hoi_vien .a_hoi_vien .img_hoi_vien{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	transition: 0.5s;
+}
+.anh_hoi_vien .div_hoi_vien .a_hoi_vien .img_hoi_vien:hover{
+	border: 5px solid red;
+	transition: 0.5s;
+}
+.niem_tin{
+	margin-bottom: 50px;
+
+}
+footer{
+	width: 100%;
+	height: auto;
+	background: #272727;
+}
+ footer .div_footer{
+ 	margin-top: 50px;
+ 	margin-bottom: 30px;
+}
+footer .div_footer .h3_footer{
+	color:#fff;
+	font-style: 30px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+footer .div_footer ul{
+	list-style: none;
+}
+footer .div_footer ul li{
+	list-style: none;
+}
+footer .div_footer ul li .fas{
+	margin-right: 15px;
+	color:red;
+}
+footer .div_footer ul li a{
+	text-decoration: none;
+	color:#604c4c;
+	font-style: 20px;
+	line-height:20px;
+	text-transform: capitalize;
+}
+footer .div_footer ul li a:hover{
+	color:#fff;
+}
+footer .div_footer .h3_sdt{
+	color:#f2ea0e;
+	font-style: 300px;
+}
+footer .div_footer .gach_nganh{
+	width: 150px;
+	height: 3px;
+	background: #e5acac;
+}
+footer .div_footer .a_i{
+	text-decoration: none;
+	color:#e5acac;
+	font-size: 35px;
+	margin-right: 20px;
+	border: 1px solid #fff;
+	padding: 5px;
+}
+footer .div_footer .a_i:hover{
+	color:blue;
+}
+
+footer .div_footer .form_foorter{
+	margin-top: 20px;
+	border: 1px solid red;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+footer .div_footer .form_foorter .users{
+	margin-bottom: 10px;
+}
+footer .div_footer .form_foorter .users .div_input{
+	color:red;
+	float: left;
+	margin-right: 10px;
+}
+footer .div_footer .form_foorter .users .input{
+	margin-left: 2px;
+}
+footer .div_footer .form_foorter .btn{
+	margin-left: 25px;
+	color:#fff;
+	background: #d33f3f;
+	text-transform: uppercase;
+}
+.fa-square{
+	font-size: 50%;
+}
+.fa-user,.fa-mobile-alt{
+	font-size: 150%;
+}
