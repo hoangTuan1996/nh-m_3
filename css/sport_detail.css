@@ -1,0 +1,38 @@
+.sp_des a{
+	list-style: none;
+}
+.text{
+	padding-left: 90px;
+	margin: 50px 0;
+}
+.inside{
+	width: 100%;
+	margin-bottom: 650px;
+	padding: 0 100px 0 80px;
+}
+.sp_img{
+	float: left;
+}
+.sp_des{
+	float: left;
+}
+.inside img{
+	height: 300px;
+}
+header{
+	height: auto;
+}
+@media only screen and (max-width: 992px){
+	.inside{
+		margin-bottom: 1000px;
+	}
+	.sp_des{
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.lg_text{
+		display: none;
+	}
+	.inside{margin-bottom: 700px;}
+}

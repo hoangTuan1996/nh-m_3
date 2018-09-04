@@ -10,15 +10,14 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="css/trang_chu.css">
-	<link rel="stylesheet" href="css/gioi_thieu.css">
-	<link rel="stylesheet" href="css/tin_tuc.css">
+	<link rel="stylesheet" href="css/sp.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/trang_chu.js"></script>
 	<script src="js/data.js"></script>
 	</head>
 	
 <body>
-	<!-- logo -->
+	<!-- logo <--></-->
 	<header id="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -31,7 +30,7 @@
 							<li class="menu_item"><a href="trang_chu.html" title="">home</a></li>
 							<li class="menu_item"><a href="#" title="">introduce</a></li>
 						<li class="menu_item"><a href="lien_he.html" title="">contact</a></li>
-						<li class="menu_item"><a href="#" title="">indoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
+						<li class="menu_item"><a href="indoor.html" title="">indoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
 							<ul id="list_indoor">
 								<!-- data -->
 							</ul>
@@ -76,22 +75,27 @@
 		</div>
 	</div>
 	<!-- end sai ba -->
-	<!-- tin tuc -->
-	<div class="banner-wrapper">
-		<div id="head_line">
-			<!-- data -->
+		<div class="in_head ">
+			<h1>Lish Indoor Club</h1>
 		</div>
-	</div>
+		<div class="list_in" id="list">
+			<div class="cover">
+				<div class="sp_img"><img src="sport_img/badminton.jpg"></div>
+				<div class="sp_cont">
+					<div class="name_sp"><h3>dasadfasdf</h3></div>
+					<div class="des_sp"><p>adfasdf</p></div>
+				</div>
+			</div>
+			<div class="cover">
+				<div class="sp_img"><img src="sport_img/badminton.jpg"></div>
+				<div class="sp_cont">
+					<div class="name_sp"><h3>dasadfasdf</h3></div>
+					<div class="des_sp"><p>adfasdf</p></div>
+				</div>
+			</div>
+		</div>
 
-	<div class="tin_tuc" id="n_h">
-		<div class="news-header" id="n_h">
-			<h2>LATEST NEWS THIS WEEK</h2>
-		</div>
-		<div id="show_news">
-			
-		</div>
 
-	</div>
 
 	<footer>
 		<div class="container">
@@ -178,29 +182,12 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 	</footer>
 
+
 	<script>
-		//load news
-		function loadData(){
-			var html = '';
-			for(var i = 0;i < news.length;i++)
-			{
-				html += '<a href="'+ news[i].link +' ">' +'<div class="load_news" >'+ '<img src="' + news[i].img + '">' + '<div class="news_title" id="title">' + '<h1>' + news[i].title + '</h1>' + '</div>' +'<div class="news_des" id="desc">' + '<p>' + news[i].des + '</p>'   +'</div>'  +'</div>'+ '</a>';
-
-				document.getElementById('show_news').innerHTML = html;
-			}
-		};
-		function loadHealLine(){
-			var hl ='';
-			for(var i = 0;i < news.length;i++)
-			{
-				hl += '<p class="hl_text">'+news[i].title+'</p>';
-				document.getElementById('head_line').innerHTML = hl;
-
-			}
-		};
 		//nav indoor
 		function inList(){
 			var list = '';
@@ -228,39 +215,35 @@
 				document.getElementById('list_club').innerHTML = list;
 			}
 		}
+		function sport_in_List(){
+			var list = '';
+			for(var i = 0; i < sp_in.length;i++){
+				list += '<div class="cover">'+
+				'<div class="sp_img">'+'<img src="'+sp_in[i].img+'">'+'</div>'+
+				'<div class="sp_cont">'+
+					'<div class="name_sp">'+'<h3>'+sp_in[i].name+'</h3>'+'</div>'+
+					'<div class="des_sp">'+'<p>'+sp_in[i].intro+'</p>'+'</div>'+
+				'</div>'+
+				'</div>'
+				document.getElementById('list').innerHTML = list;
+			}
+		}
 
 		//onload data
 		function start() {
-			loadData();
 			inList();
 			outList();
 			clubList();	
-			loadHealLine();
+			sport_in_List();
 		}
 		window.onload = start;
 
-		
 		//scroll to position
 		$(document).ready(function () {
+   
    			 $('html, body').animate({
-        	scrollTop: $('#head_line').offset().top -150},'slow');
+        	scrollTop: $('#news_head').offset().top - 150},'slow');
 		});
-
-		//headline
-		$(document).ready(function(){
-		  initBanner();
-		});
-
-		function initBanner(){
-		  var bannerTwo = $('#head_line').clone();
-		  bannerTwo.appendTo('.banner-wrapper');
-		  bannerTwo.addClass('banner-clone');
-		  bannerTwo.css('animation', 'scroll-start 40s linear 1');
-		  setTimeout(function(){
-		        bannerTwo.css('animation','scroll 40s linear infinite');
-		   }, 0	);
-		}
-
 	</script>
 </body>
 </html>

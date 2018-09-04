@@ -327,3 +327,8 @@ footer .div_footer .form_foorter .btn{
 .fa-user,.fa-mobile-alt{
 	font-size: 150%;
 }
+.text-center img{
+	float: left;
+	width: 300px;
+	height: auto;
+}

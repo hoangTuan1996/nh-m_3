@@ -10,15 +10,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="css/trang_chu.css">
-	<link rel="stylesheet" href="css/gioi_thieu.css">
-	<link rel="stylesheet" href="css/tin_tuc.css">
+	<link rel="stylesheet" href="css/news_detail.css">
+	<link rel="stylesheet" href="css/sport_detail.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/trang_chu.js"></script>
 	<script src="js/data.js"></script>
 	</head>
 	
 <body>
-	<!-- logo -->
+	<!-- logo <--></-->
 	<header id="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -37,7 +37,7 @@
 							</ul>
 
 						</li>
-						<li class="menu_item"><a href="#" title="">outdoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
+						<li class="menu_item"><a href="#" title="">outdoor sports <i class="fas fa-arrow-alt-circle-down"></i></a>
 							<ul id="list_outdoor">
 								<!-- data -->
 							</ul>
@@ -76,23 +76,23 @@
 		</div>
 	</div>
 	<!-- end sai ba -->
-	<!-- tin tuc -->
-	<div class="banner-wrapper">
-		<div id="head_line">
-			<!-- data -->
+	<div class="text col-xs-12">
+		<h2 style="font-size: 38px; color:#003399;">VOLLEYBALL</h2>
+	</div>
+	<div class="inside">
+		<div class="sp_img col-md-4 col-sm-12 col-xs-12">
+			<img src="sport_img/volleyball.jpg" alt="">
+		</div>
+		<div class="sp_des col-md-8 col-sm-12 col-xs-12">
+			<div class="lg_text">
+				<p style="font-size: 20px;">We will welcome any new players for the universities competitions or just for recreation. We have one men's team and one women's team, which are both competing in the Scottish 1A division. We also have a mixed team competing in the local mixed league.</p>
+			</div>
+			<p style="font-size: 20px; margin-top: 30px;"><b>Schedule</b> : Mon - Wed - Fri</p>
+			<p style="font-size: 20px; margin-top: 30px;"><b>Time</b> : 3pm - 5pm</p>
+			<p style="font-size: 20px; margin-top: 30px;"><b>Coach</b> : <a href="henderson.html">Rick Henderson</a></p>
 		</div>
 	</div>
-
-	<div class="tin_tuc" id="n_h">
-		<div class="news-header" id="n_h">
-			<h2>LATEST NEWS THIS WEEK</h2>
-		</div>
-		<div id="show_news">
-			
-		</div>
-
-	</div>
-
+	
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -178,29 +178,12 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</footer>
 
+
 	<script>
-		//load news
-		function loadData(){
-			var html = '';
-			for(var i = 0;i < news.length;i++)
-			{
-				html += '<a href="'+ news[i].link +' ">' +'<div class="load_news" >'+ '<img src="' + news[i].img + '">' + '<div class="news_title" id="title">' + '<h1>' + news[i].title + '</h1>' + '</div>' +'<div class="news_des" id="desc">' + '<p>' + news[i].des + '</p>'   +'</div>'  +'</div>'+ '</a>';
-
-				document.getElementById('show_news').innerHTML = html;
-			}
-		};
-		function loadHealLine(){
-			var hl ='';
-			for(var i = 0;i < news.length;i++)
-			{
-				hl += '<p class="hl_text">'+news[i].title+'</p>';
-				document.getElementById('head_line').innerHTML = hl;
-
-			}
-		};
 		//nav indoor
 		function inList(){
 			var list = '';
@@ -231,36 +214,18 @@
 
 		//onload data
 		function start() {
-			loadData();
 			inList();
 			outList();
 			clubList();	
-			loadHealLine();
 		}
 		window.onload = start;
 
-		
 		//scroll to position
 		$(document).ready(function () {
+   
    			 $('html, body').animate({
-        	scrollTop: $('#head_line').offset().top -150},'slow');
+        	scrollTop: $('.text').offset().top - 150},'slow');
 		});
-
-		//headline
-		$(document).ready(function(){
-		  initBanner();
-		});
-
-		function initBanner(){
-		  var bannerTwo = $('#head_line').clone();
-		  bannerTwo.appendTo('.banner-wrapper');
-		  bannerTwo.addClass('banner-clone');
-		  bannerTwo.css('animation', 'scroll-start 40s linear 1');
-		  setTimeout(function(){
-		        bannerTwo.css('animation','scroll 40s linear infinite');
-		   }, 0	);
-		}
-
 	</script>
 </body>
 </html>

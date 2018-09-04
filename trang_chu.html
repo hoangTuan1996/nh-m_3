@@ -12,52 +12,41 @@
 	<link rel="stylesheet" href="css/trang_chu.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/trang_chu.js"></script>
+	<script src="js/data.js"></script>
 	</head>
 	
 <body>
-	<!-- logo -->
+	<!-- logo <--></-->
 	<header id="header">
 		<div class="container-fluid">
 			<div class="row">
 				<div id="logo" class="col-md-3 col-sm-6 col-xs-12">
 					<a href="#" title=""><img src="img/cali-myclub.png"></a>
 				</div>
-				<div id="menu" class="col-md-9 col-sm-12 col-xs-12">
+				<div id="menu" class="col-md-9 d-none d-md-block d-lg-none">
 					<nav>
 						<ul>
 							<li class="menu_item"><a href="trang_chu.html" title="">home</a></li>
 							<li class="menu_item"><a href="#" title="">introduce</a></li>
 						<li class="menu_item"><a href="lien_he.html" title="">contact</a></li>
-						<li class="menu_item"><a href="#" title="">indoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
-							<ul>
-								<li class="menu_item"><a href="#" title="">môn 1</a></li>
-								<li class="menu_item"><a href="#" title="">môn 2</a></li>
-								<li class="menu_item"><a href="#" title="">môn 3</a></li>
-								<li class="menu_item"><a href="#" title="">môn 4</a></li>
-								<li class="menu_item"><a href="#" title="">môn 5</a></li>
+						<li class="menu_item"><a href="indoor.html" title="">indoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
+							<ul id="list_indoor">
+								<!-- data -->
 							</ul>
 
 						</li>
-						<li class="menu_item"><a href="#" title="">outdoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
-							<ul>
-								<li class="menu_item"><a href="#" title="">môn 1</a></li>
-								<li class="menu_item"><a href="#" title="">môn 2</a></li>
-								<li class="menu_item"><a href="#" title="">môn 3</a></li>
-								<li class="menu_item"><a href="#" title="">môn 4</a></li>
-								<li class="menu_item"><a href="#" title="">môn 5</a></li>
+						<li class="menu_item"><a href="outdoor.html" title="">outdoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
+							<ul id="list_outdoor">
+								<!-- data -->
 							</ul>
 						</li>
 						<li class="menu_item"><a href="#" title="">blog</a></li>
-						<li class="menu_item"><a href="#" title="">news</a></li>
+						<li class="menu_item"><a href="tin_tuc.html" title="">news</a></li>
 						<li class="menu_item"><a href="#" title="">other subjects</a></li>
 						<li class="menu_item"><a href="#" title="">schedule</a></li>
 						<li class="menu_item"><a href="#" title="">club  <i class="fas fa-arrow-alt-circle-down"></i></a>
-							<ul id="ul_main">
-								<li class="menu_item"><a href="#" title="">môn 1</a></li>
-								<li class="menu_item"><a href="#" title="">môn 2</a></li>
-								<li class="menu_item"><a href="#" title="">môn 3</a></li>
-								<li class="menu_item"><a href="#" title="">môn 4</a></li>
-								<li class="menu_item"><a href="#" title="">môn 5</a></li>
+							<ul id="list_club">
+								<!-- data -->
 							</ul>
 						</li>
 						</ul>
@@ -99,12 +88,12 @@
 	<!-- các môn thể thao -->
 	<div id="hieu_ung">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-4 col-sm-12 col-xs-12 sp">
+			<div class="row" id="main_img">
+				<!-- <div class="col-md-4 col-sm-12 col-xs-12 sp">
 					<a href="#" title=""><img src="img/boi.jpg" alt=""></a>
 				</div>
 				<div class="col-md-4 col-sm-12 col-xs-12 sp">
-					<a href="#" title=""><img src="img/bong_ban.jpg" alt=""></a>
+					<a href="#" title=""><img src="img/dap_xe.jpg" alt=""></a>
 				</div>
 				<div class="col-md-4 col-sm-12 col-xs-12 sp">
 					<a href="#" title=""><img src="img/bong_chuyen.jpg" alt=""></a>
@@ -125,8 +114,8 @@
 					<a href="#" title=""><img src="img/teen.jpg" alt=""></a>
 				</div>
 				<div class="col-md-4 col-sm-12 col-xs-12 sp">
-					<a href="#" title=""><img src="img/bong_da.jpg" alt=""></a>
-				</div>
+					<a href="#" title=""><img src="img/bong_chay.jpg" alt=""></a>
+				</div> -->
 		</div>
 	</div>	
 	<!-- hết các môn thể thao -->
@@ -188,8 +177,8 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div>
-					<div class="clue col-md-4 col-sm-6 col-xs-12">
+				<div id="club_ima">
+					<!-- <div class="clue col-md-4 col-sm-6 col-xs-12">
 						<a href="#" class="a_clue" title=""><img class="img_clue" src="img/san_tennit.jpg" alt=""></a>
 						<div class="hover_clue">
 							<a href="#" class="a_clue" title="">xem chi tiết</a>
@@ -242,7 +231,7 @@
 						<div class="hover_clue">
 							<a href="#" class="a_clue" title="">xem chi tiết</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -423,5 +412,73 @@
 
 		</div>
 	</footer>
+
+	<script>
+		//nav indoor
+		function inList(){
+			var list = '';
+			for(var i = 0;i<sp_in.length;i++)
+			{
+				list += '<li class="menu_item">'+'<a href="'+ sp_in[i].link +'">'+ sp_in[i].name + '</a>'+'</li>'
+				document.getElementById('list_indoor').innerHTML = list;
+			}
+		}
+
+		//nav outdoor
+		function outList(){
+			var list = '';
+			for(var i = 0;i<sp_out.length;i++)
+			{
+				list += '<li class="menu_item">'+'<a href="'+ sp_out[i].link +'">'+ sp_out[i].name + '</a>'+'</li>'
+				document.getElementById('list_outdoor').innerHTML = list;
+			}
+		}
+		//nav club list
+		function clubList(){
+			var list = '';
+			for(var i = 0; i < club.length; i++){
+				list += '<li class="menu_item">'+'<a href="'+ club[i].link +'">'+ club[i].name + '</a>'+'</li>'
+				document.getElementById('list_club').innerHTML = list;
+			}
+		}
+
+		function spImg(){
+			var list = '';
+			for (var i = 0; i < 9; i++ ){
+				list += '<div class="col-md-4 col-sm-12 col-xs-12 sp">'+
+					'<a href="'+ image[i].link+'" title="">'+'<img src="'+image[i].img+'" alt="">'+'</a>'+'</div>'
+				document.getElementById('main_img').innerHTML = list;
+
+			}
+		}
+
+		function clbImg(){
+			var list = '';
+			for(var i = 0; i < club_img.length; i++){
+				 list += //'<div class="clue col-md-4 col-sm-6 col-xs-12">'+
+				// 			'<img class="img_clue" src="'+club_img[i].img+'" alt="">'+'</a>'
+				// 		'</div>'
+						<div class="clue col-md-4 col-sm-6 col-xs-12">
+						<a href="#" class="a_clue" title=""><img class="img_clue" src="img/san_tennit.jpg" alt=""></a>
+						<div class="hover_clue">
+							<a href="#" class="a_clue" title="">xem chi tiết</a>
+						</div>
+						</div>
+				document.getElementById('club_ima').innerHTML = list;
+
+
+			}
+		}
+		//onload data
+		function start() {
+			inList();
+			outList();
+			clubList();	
+			spImg();
+			clbImg();
+		}
+		window.onload = start;
+
+	</script>
 </body>
 </html>
