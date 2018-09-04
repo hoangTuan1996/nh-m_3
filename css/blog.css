@@ -1,0 +1,88 @@
+.blogger{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blog{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #ececec;
+}
+.topic-blog img{
+	width: 20%;
+}
+.blogger li{
+	list-style: none;
+	height: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	float: left;
+	width: 100%;
+}
+.topic-blog,.title,.topic-blog img{
+	float: left;
+}
+.topic-blog{
+	border: 1px solid #333;
+	box-shadow: 1px 1px 1px #333;
+}
+.title{
+	width: 80%;
+	float: left;
+}
+.topic-blog,#title-blog1,#title-blog2,#title-blog3,#title-blog4{
+	padding: 0;
+}
+#title-blog1 img,#title-blog2 img,#title-blog3 img,#title-blog4 img{
+	border-radius: 100%;
+}
+.topic-blog h3,.topic-blog h5{
+	margin-left: 30px;
+	color: #000;
+}
+#title-blog1:hover,#title-blog2:hover,#title-blog3:hover,#title-blog4:hover{
+	background: #7bc1f3;
+}
+.blog-content{
+	float: left;
+	padding-top: 20px;
+	margin: 0 auto;
+
+}
+.blog-content img{
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+}
+.thu-gon1,.thu-gon2,.thu-gon3,.thu-gon4{
+	background: #e9e9e9;
+	float: right;
+	margin-top: 50px;
+	padding: 0;
+	border-radius: 10px;
+}
+.thu-gon p{
+	width: auto;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.thu-gon p:hover{
+	color: #f03b3b;
+}
+.blog-content1,.blog-content2,.blog-content3,.blog-content4{
+	display: none;
+}
+.advertisment{
+	float: left;
+	margin-top: 50px;
+	height: auto;
+	border: 1px solid #e7e4e4;
+	padding-right: 0;
+}
+.advertisment img{
+	margin-bottom: 20px;
+}

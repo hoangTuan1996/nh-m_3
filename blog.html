@@ -17,26 +17,19 @@
 	
 <body>
 	<!-- logo -->
-	<header id="header" class="">
-		<div class="container">
+	<header id="header">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="logo text-center">
-					<h1>lo<span>go</span></h1>
+				<div id="logo" class="col-md-3 col-sm-6 col-xs-12">
+					<a href="#" title=""><img src="img/cali-myclub.png"></a>
 				</div>
-			</div>
-		</div>
-	</header>
-	<!-- end logo -->
-	<!-- menu -->
-	<!-- <nav>
-		<div class="container">
-			<div class="row">
-				<div id="menu">
-					<ul>
-						<li class="menu_item"><a href="#" title="">home</a></li>
-						<li class="menu_item"><a href="#" title="">introduce</a></li>
-						<li class="menu_item"><a href="#" title="">contact</a></li>
-						<li class="menu_item"><a href="#" title="">indoor sports</a>
+				<div id="menu" class="col-md-9 col-sm-12 col-xs-12">
+					<nav>
+						<ul>
+							<li class="menu_item"><a href="trang_chu.html" title="">home</a></li>
+							<li class="menu_item"><a href="#" title="">introduce</a></li>
+						<li class="menu_item"><a href="lien_he.html" title="">contact</a></li>
+						<li class="menu_item"><a href="#" title="">indoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
 							<ul>
 								<li class="menu_item"><a href="#" title="">môn 1</a></li>
 								<li class="menu_item"><a href="#" title="">môn 2</a></li>
@@ -46,7 +39,7 @@
 							</ul>
 
 						</li>
-						<li class="menu_item"><a href="#" title="">outdoor sports</a>
+						<li class="menu_item"><a href="#" title="">outdoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
 							<ul>
 								<li class="menu_item"><a href="#" title="">môn 1</a></li>
 								<li class="menu_item"><a href="#" title="">môn 2</a></li>
@@ -59,8 +52,8 @@
 						<li class="menu_item"><a href="#" title="">news</a></li>
 						<li class="menu_item"><a href="#" title="">other subjects</a></li>
 						<li class="menu_item"><a href="#" title="">schedule</a></li>
-						<li class="menu_item"><a href="#" title="">club</a>
-							<ul>
+						<li class="menu_item"><a href="#" title="">club  <i class="fas fa-arrow-alt-circle-down"></i></a>
+							<ul id="ul_main">
 								<li class="menu_item"><a href="#" title="">môn 1</a></li>
 								<li class="menu_item"><a href="#" title="">môn 2</a></li>
 								<li class="menu_item"><a href="#" title="">môn 3</a></li>
@@ -68,11 +61,30 @@
 								<li class="menu_item"><a href="#" title="">môn 5</a></li>
 							</ul>
 						</li>
-					</ul>
+						</ul>
+					 </nav>
 				</div>
 			</div>
 		</div>
-	</nav> -->
+	<!-- end logo -->
+	<!-- menu -->
+	</header>
+	<!-- het thanh menu-->
+	<!-- sai ba -->
+	<div id="main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="img col-md-12 col-sm-12 col-xs-12"">
+					<img class="slide" src="img/cent_d.jpg" stt="0">
+					<img class="slide" src="img/img_1.jpg" stt="1" style="display: none;">
+					<img class="slide" src="img/header_white_d.jpg" stt="2" style="display: none;">
+					<img class="slide" src="img/Poledance.jpg" stt="3" style="display: none;">
+				</div>
+				<a href="#" id="prev" title=""><i class="fas fa-angle-left"></i></a>
+				<a href="#" id="next" title=""><i class="fas fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
 	<!-- het thanh menu-->
 	<!-- sai ba -->
 	<div id="main">
@@ -95,8 +107,8 @@
 				<div class="col-xs-12 col-sm-12 col-md-10 center-block blogger">
 					<ul>
 					<li>
-						<div class="col-md-12 col-sm-12 col-xs-12 topic-blog">
-							<a href="#" id="title-blog" class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-12 col-sm-12 col-xs-12 topic-blog" style="cursor: pointer;">
+							<div id="title-blog1" class="col-md-12 col-sm-12 col-xs-12">
 								<img src="img/blog/blog1.png">
 								<div class="title">
 									<h3>How do I leanning martical art?
@@ -105,7 +117,7 @@
 								As a coach of RYAN Sport Club, I always understand the difficulties and the trainees have to go through. My own experience and practice, I have drawn a lot of things
 									</h5>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="col-md-11 col-sm-11 col-xs-11 blog-content blog-content1 center-block">
 <h3>
@@ -125,78 +137,149 @@ The students enjoyed the sharing of Cung Le. These are precious experiences that
 <img src="img/blog/blog1-10.jpg">
 A female fan did not hide the joy of meeting idols.
 Cung Lê ký tặng người hâm mộ.
-						<div class="thu-gon1"><a class="col-md-2 col-sm-2 col-xs-2" href="#">Close</a></div>
+						<div class="thu-gon1 thu-gon"><p style="cursor: pointer;">Close</p>
+						</div>
 						</div>
 					</li>
 					<li>
 						<div class="col-md-12 col-sm-12 col-xs-12 topic-blog">
-							<a href="#" id="title-blog" class="col-md-12 col-sm-12 col-xs-12">
-								<img src="img/blog/blog1.png">
+							<div id="title-blog2" class="col-md-12 col-sm-12 col-xs-12" style="cursor: pointer;">
+								<img src="img/blog/blog2.jpg">
 								<div class="title">
-									<h3>How do I leanning martical art?
+									<h3>Chess players reveal good chess tips
 									</h3>
 									<h5>
-								As a coach of RYAN Sport Club, I always understand the difficulties and the trainees have to go through. My own experience and practice, I have drawn a lot of things
+To play good chess, the important thing is not hard work, there should be a different way of thinking ... that is the sharing of a coach at RYAN Sport Club
 									</h5>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="col-md-11 col-sm-11 col-xs-11 blog-content blog-content2 center-block">
 <h3>
-On the 14th and 15th of August, martial arts star Cung Le shared his experiences of self defense as well as defeating rival Michael Bisping to the Vietnamese NHM.</h3>
-<img src="img/blog/blog1-1.jpg">		
-Master Cung Le came to Vietnam to share his experiences in martial arts and rehearsals for the match against Michael Bisping during the UFC Fight Night on 23/8, many fans came to Saigon Sports Club, 514B Huynh Tan Phat, District 7 to witness the idol.
-<img src="img/blog/blog1-2.jpg">
-Cung Le sincerely shared his experiences of martial arts career. He is quite fluent in Vietnamese and speaks with people more easily. He learned martial arts to protect himself when he was bullied by his friends and then made his name on the ring so his experience was very useful to martial artists.
-<img src="img/blog/blog1-4.jpg">
-The martial arts star of Hollywood is also devoted to teaching moves to those who are passionate about martial arts, especially kickboxing, where he has won 17 games in his career.
-<img src="img/blog/blog1-5.jpg">
-The match against Michael Bisping on August 23 in Macau is a big challenge for Cung Le. This martial artist is seven years older than Cung Le, taller and heavier. He was determined to beat Cung Le after dropping from 5th to 8th place on the UFC chart. Photo: Getty Images.
-<img src="img/blog/blog1-6.jpg">
-In order to beat the opponent, Cung Le practiced very hard. He shared the secret of defeating his opponents: "Bisping is in very good form, in the fifth and in the first half. I do not have the specific skills to beat him but he will choose the situation and the chance to hit the game. knock out knock out ".
-<img src="img/blog/blog1-8.jpg">
-The students enjoyed the sharing of Cung Le. These are precious experiences that they are not easy to get.
-<img src="img/blog/blog1-10.jpg">
-A female fan did not hide the joy of meeting idols.
-Cung Lê ký tặng người hâm mộ.
-						<div class="thu-gon2"><a class="col-md-2 col-sm-2 col-xs-2" href="#">Close</a></div>
+To be able to play good chess must master the whole game, the military and the military. So how to make a reasonable outfit? How to control the troops effectively?</h3>
+<img src="img/blog/blog2-4.jpg">		
+<br><b>1. Deployment of all major forces soon:</b><br>
+Chess has many troops, so we should know how to make the most out of it. The launching phase should be ready for the offensive or defensive formation ... The main forces such as Phao, Xe, Ma on both wings must be mobilized to quickly gain advantages.
+<img src="img/blog/blog2-1.jpg">
+<br><br><b>2. Must create a flexible game.</b><br>
+deploy the main troops into a game with the requirement that all troops promote their functions. That is the layout is flexible and good mobility. To attack or defend is easy. Avoid blockade, blocked range, the troops moving difficult in the stuffy situatio
+<br><br><b>3. Need to recognize the role of the pieces:</b><br>
+Good advances make the code is flexible also control the Good enemy that they can not up, stifling the Code of them.
+<img src="img/blog/blog2-2.jpg">
+<br><br><b>4. Do not go one more time.</b><br>
+If you use only two or three troops, if the enemy is full, you will carry out an attack.
+<br><br><b>5. Do not rush in case you have not developed enough force.</b><br>
+The tactics of playing chess are the same as the art of using the old generals (eg, Zhuge Liang is a very good man to fight) if only deployed a few troops that hurry to attack is very danger. The opponent will fend off easily.
+<img src="img/blog/blog2-3.jpg">
+<br><br><b>6. Should not take small interests that fall into the mystery.</b><br>
+The inexperienced chess players chasing, catching, catch Good are often besieged, sometimes lost troops.
+We must always look holistically, do not be one, do not take a small advantage that was intrigued. 
+<br><br><b>7. The status of the pieces should be avoided during play.</b><br>
+Players should deploy their troops accordingly. The flexible troops to promote their full capabilities, when the enemy is easy to cope with. The deployment of troops to rhythm, forming a solid game, creating favorable conditions for the. later stage.
+						<div class="thu-gon2 thu-gon"><p style="cursor: pointer;">Close</p>
+						</div>
 						</div>
 					</li>
 					<li>
 						<div class="col-md-12 col-sm-12 col-xs-12 topic-blog">
-							<a href="#" id="title-blog" class="col-md-12 col-sm-12 col-xs-12">
-								<img src="img/blog/blog1.png">
+							<div id="title-blog3" class="col-md-12 col-sm-12 col-xs-12" style="cursor: pointer;">
+								<img src="img/blog/blog3.jpg">
 								<div class="title">
-									<h3>How do I leanning martical art?
+									<h3>
+										Gym, hard work is the best?
 									</h3>
 									<h5>
-								As a coach of RYAN Sport Club, I always understand the difficulties and the trainees have to go through. My own experience and practice, I have drawn a lot of things
+									Do not exercise gym, have to know the time of fat burning 3 times faster
 									</h5>
 								</div>
-							</a>
+							</div>
 						</div>
-						<div class="col-md-11 col-sm-11 col-xs-11 blog-content blog-content1 center-block">
+						<div class="col-md-11 col-sm-11 col-xs-11 blog-content blog-content3 center-block">
 <h3>
-On the 14th and 15th of August, martial arts star Cung Le shared his experiences of self defense as well as defeating rival Michael Bisping to the Vietnamese NHM.</h3>
-<img src="img/blog/blog1-1.jpg">		
-Master Cung Le came to Vietnam to share his experiences in martial arts and rehearsals for the match against Michael Bisping during the UFC Fight Night on 23/8, many fans came to Saigon Sports Club, 514B Huynh Tan Phat, District 7 to witness the idol.
-<img src="img/blog/blog1-2.jpg">
-Cung Le sincerely shared his experiences of martial arts career. He is quite fluent in Vietnamese and speaks with people more easily. He learned martial arts to protect himself when he was bullied by his friends and then made his name on the ring so his experience was very useful to martial artists.
-<img src="img/blog/blog1-4.jpg">
-The martial arts star of Hollywood is also devoted to teaching moves to those who are passionate about martial arts, especially kickboxing, where he has won 17 games in his career.
-<img src="img/blog/blog1-5.jpg">
-The match against Michael Bisping on August 23 in Macau is a big challenge for Cung Le. This martial artist is seven years older than Cung Le, taller and heavier. He was determined to beat Cung Le after dropping from 5th to 8th place on the UFC chart. Photo: Getty Images.
-<img src="img/blog/blog1-6.jpg">
-In order to beat the opponent, Cung Le practiced very hard. He shared the secret of defeating his opponents: "Bisping is in very good form, in the fifth and in the first half. I do not have the specific skills to beat him but he will choose the situation and the chance to hit the game. knock out knock out ".
-<img src="img/blog/blog1-8.jpg">
-The students enjoyed the sharing of Cung Le. These are precious experiences that they are not easy to get.
-<img src="img/blog/blog1-10.jpg">
-A female fan did not hide the joy of meeting idols.
-Cung Lê ký tặng người hâm mộ.
-						<div class="thu-gon1"><a class="col-md-2 col-sm-2 col-xs-2" href="#">Close</a></div>
+If you only exercise gym, you do not know when your body burn fat the most will be very long you have a beautiful body.
+</h3>
+<img src="img/blog/blog3-1.jpg">
+<br>
+Surely a lot of people practice the gym not to ask a series of questions such as why do not lose weight, practice forever not fat, not beautiful ...?
+With trained knowledge and practical experience, personal coach Nguyen Hieu affirmed that to achieve the desired body, nutrition plays a 60% success rate, 30% due to exercise, and 10% due to heredity.
+In practice, there are two factors that directly affect body fat burning:
+<br><br><b>1. Accelerate burning fat faster</b><br>
+<img src="img/blog/blog3-2.jpg">
+<br>
+Studies show that morning exercise burns fat three times faster than in other times.
+Because the body uses carbohydrates from meals as the main energy, for eight hours during sleep, the body is constantly metabolizing. So when you wake up, the carbohydrate intake will be very little.
+<br><br><b>2. Professional exercises</b><br>
+<img src="img/blog/blog3-4.jpg">
+<br>
+Want to burn more fat? Try to practice cardio in the morning with moderate intensity.
+Cardio is a series of continuous exercises and very little rest, popular is cycling, swimming, jumping rope, jogging ...
+Conversely, when you exercise after 20 hours, you will still burn fat but then you fall asleep - the lowest metabolism of the day the fat burning will be very limited.
+<br><br><b>3. Breakfast properly.</b><br>
+Most fat people make mistakes when eating fast to lose weight. While breakfast is a way to keep your metabolism from increasing after exercise, it helps stop appetite during the day.
+Breakfast will also keep you energized throughout the day and reduce stress.
+<img src="img/blog/blog3-3.jpg">
+<br>
+Breakfast helps metabolism increase after exercise, helping the body burn fat all day
+Waiting until midday or afternoon to eat will make you devour, excess energy will not absorb all the fat again.
+Another important reason, at noon, in the afternoon, your metabolic capacity has begun to slow down as fat burns down.
+<img src="img/blog/blog3-5.jpg">
+<br>
+Simply put, your body is like a fat burner all day, eating breakfast is like throwing a big log into the hearth so your body starts to burn fat.
+Tip: Instead of eating two main meals for lunch and dinner, try to eat 4-5 small meals / day, each 2-3 hours apart.
+						<div class="thu-gon3 thu-gon"><p style="cursor: pointer;">Close</p>
 						</div>
+						</div>		
+					</li>
+					<li>
+						<div class="col-md-12 col-sm-12 col-xs-12 topic-blog">
+							<div id="title-blog4" class="col-md-12 col-sm-12 col-xs-12" style="cursor: pointer;">
+								<img src="img/blog/blog4.jpg">
+								<div class="title">
+									<h3>
+										Become an excellent soccer player, easy or hard?
+									</h3>
+									<h5>
+										Football is for everyone in the world, just you have endless passion
+									</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-11 col-sm-11 col-xs-11 blog-content blog-content4 center-block">
+<h3>
+Wanting to be a good player like Cristiano Ronaldo or Lionel Messi is not difficult. Only you seriously follow the 5 tips below.
+</h3>
+<br><br><b>1. Apparently location</b><br>
+<img src="img/blog/blog4-1.jpg">
+<br>
+Different positions require different training methods, which are shared by Mark Howard, physical head of Blackburn Rovers. "For example, a central midfielder often has to operate in a narrow range, requiring short, sudden turnovers. A winger needs broader handling situations, the ability to accelerate within 30 to 40 meters, and then slow down in position. A goalkeeper needs a good turn. "
+<br><br><b>2. Remember to set the muscle groups behind</b><br>
+<img src="img/blog/blog4-2.jpg">
+Traumatic injuries are usually caused by an imbalance of the body. "When you do physical exercises, do not forget back exercises like back, back thighs or buttocks," Howard says.
+<br><br><b>3. Drink a lot of water</b><br>
+<img src="img/blog/blog4-3.jpg">
+<br>
+Keep your body hydrated to ensure it works best. "Just a little dehydration will affect performance," Howard said, "so drink plenty of water before and during exercise. For food, you should eat carbohydrate foods before the game for a few days to provide the energy needed for muscle. Do not eat on the day of competition, because it is too late.
+<br><br><b>4. Stretching</b><br>
+<img src="img/blog/blog4-4.jpg">
+<br>
+Flexibility is an important factor in preventing injury. "Before every game, we do a lot of stretching exercises according to the movements that may be used on the pitch. Pilates and yoga exercises are very useful for the player, it enhances muscular stability. 
+<br><br><b>5. Be quick</b><br>
+<img src="img/blog/blog4-5.jpg">
+<br>
+Good strength and strength are important, "but we also need to make the body faster," Howard said. "Players need to accelerate better, stop and change direction without losing momentum. It depends a lot on the strength of the legs. "
+						<div class="thu-gon4 thu-gon"><p style="cursor: pointer;">Close</p>
+						</div>
+						</div>		
 					</li>
 					</ul>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 advertisment">
+					<div>
+						<img src="img/blog/ad3.gif">
+						<img src="img/blog/ad2.gif">
+						<img src="img/blog/ad1.gif">
+						<img src="img/blog/ad4.gif">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -291,11 +374,29 @@ Cung Lê ký tặng người hâm mộ.
 	</footer>
 	<script type="text/javascript">
 		$(document).ready(function(){
-    		$("#title-blog").click(function(){
-        	$(".blog-content1").show();
+    		$("#title-blog1").click(function(){
+        	$(".blog-content1").fadeIn(300);
     	});
     		$(".thu-gon1").click(function(){
-        	$(".blog-content1").hide();
+        	$(".blog-content1").fadeOut(300);
+    });
+    		$("#title-blog2").click(function(){
+        	$(".blog-content2").fadeIn(300);
+    	});
+    		$(".thu-gon2").click(function(){
+        	$(".blog-content2").fadeOut(300);
+    });
+    		$("#title-blog3").click(function(){
+        	$(".blog-content3").fadeIn(300);
+    	});
+    		$(".thu-gon3").click(function(){
+        	$(".blog-content3").fadeOut(300);
+    });
+    		$("#title-blog4").click(function(){
+        	$(".blog-content4").fadeIn(300);
+    	});
+    		$(".thu-gon4").click(function(){
+        	$(".blog-content4").fadeOut(300);
     });
 	});
 	</script>

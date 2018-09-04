@@ -1,0 +1,119 @@
+.gioithieu{
+	background: #f2f2f2;
+}
+.introduction{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 1px solid #e2dfdf;
+	box-shadow: 2px 2px 2px #333;
+	float: left;
+}
+.introduction h5{
+	font-weight: bold;
+}
+.introduction{
+	border: 1px solid #e2dfdf;
+	box-shadow: 2px 2px 2px #333;
+	background: #fbfec2;
+}
+.introduction:hover{
+	position: relative;
+	z-index: 4;
+	transform: scale(1.1);
+	font-size: large;
+}
+.top-intro{
+	padding: 0;
+}
+.top-gioithieu{
+	float: left;
+	margin-top: 50px;
+}
+.intro{
+	float: left;
+	height: 80px;
+	padding: 0 15px;
+}
+.intro span{
+	height: 100%;
+	width: 100%;
+	background: #e53333;
+	margin: 0;
+	float:left;
+	border-radius: 10px;
+	color: #fff;
+	border: 1px solid #50c62f;
+	box-shadow: 2px 2px 2px #50c62f;
+	cursor: default;
+}
+.intro span:hover{
+	opacity: 0.5;
+	transform: scale(1.15);
+	font-style: italic;
+}
+.intro i{
+	width: 15%;
+	height: 100%;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 18px;
+}
+.intro h3{
+	width: 80%;
+	height: 100%;
+	float: left;
+	margin-top: 18px;
+	font-size: 20px;
+}
+.news-item{
+	float: left;
+	margin-top: 50px;
+}
+.in-news-item{
+	border: 1px solid #e2dfdf;
+	box-shadow: 2px 2px 2px #333;
+	height: auto;
+	background: #333;
+}
+.news-item h2{
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+.news-item ul{
+	width: 100%;
+	margin: 0;
+}
+.news-item li{
+	list-style: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+	text-indent: 15px;
+	background: #fc8181;
+}
+.news-item li:hover{
+	transform: scale(1.1);
+	border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+  color: #fff;
+}
+.content-item1,.content-item2{
+	display: none;
+}
+.content-item3,.content-item4,.content-item5{
+	display: none;
+}
+.introduction i{
+	margin-left: 5px;
+	margin-right: 15px;
+}
+.news-item img{
+	border: 1px solid #e2dfdf;
+	box-shadow: 2px 2px 2px #333;
+	margin-top: 20px;
+}
