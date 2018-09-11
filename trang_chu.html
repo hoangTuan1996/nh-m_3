@@ -11,7 +11,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="css/trang_chu.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/trang_chu.js"></script>
+	 <script type="text/javascript" src="js/trang_chu.js"></script>
+	 <script src="js/data.js" type="text/javascript" ></script>
 	</head>
 	
 <body>
@@ -22,52 +23,46 @@
 				<div id="logo" class="col-md-3 col-sm-6 col-xs-12">
 					<a href="#" title=""><img src="img/cali-myclub.png"></a>
 				</div>
-				<div id="menu" class="col-md-9 col-sm-12 col-xs-12">
+				<div id="menu" class="col-md-6 col-sm-12 col-xs-12">
 					<nav>
 						<ul>
 							<li class="menu_item"><a href="trang_chu.html" title="">home</a></li>
 							<li class="menu_item"><a href="#" title="">introduce</a></li>
-						<li class="menu_item"><a href="lien_he.html" title="">contact</a></li>
 						<li class="menu_item"><a href="#" title="">indoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
-							<ul>
-								<li class="menu_item"><a href="#" title="">môn 1</a></li>
-								<li class="menu_item"><a href="#" title="">môn 2</a></li>
-								<li class="menu_item"><a href="#" title="">môn 3</a></li>
-								<li class="menu_item"><a href="#" title="">môn 4</a></li>
-								<li class="menu_item"><a href="#" title="">môn 5</a></li>
+							<ul id="list_indoor">
+								
 							</ul>
 
 						</li>
 						<li class="menu_item"><a href="#" title="">outdoor sports  <i class="fas fa-arrow-alt-circle-down"></i></a>
-							<ul>
-								<li class="menu_item"><a href="#" title="">môn 1</a></li>
-								<li class="menu_item"><a href="#" title="">môn 2</a></li>
-								<li class="menu_item"><a href="#" title="">môn 3</a></li>
-								<li class="menu_item"><a href="#" title="">môn 4</a></li>
-								<li class="menu_item"><a href="#" title="">môn 5</a></li>
+							<ul id="list_outdoor">
+								
 							</ul>
 						</li>
 						<li class="menu_item"><a href="#" title="">blog</a></li>
 						<li class="menu_item"><a href="#" title="">news</a></li>
-						<li class="menu_item"><a href="#" title="">other subjects</a></li>
-						<li class="menu_item"><a href="#" title="">schedule</a></li>
-						<li class="menu_item"><a href="#" title="">club  <i class="fas fa-arrow-alt-circle-down"></i></a>
-							<ul id="ul_main">
-								<li class="menu_item"><a href="#" title="">môn 1</a></li>
-								<li class="menu_item"><a href="#" title="">môn 2</a></li>
-								<li class="menu_item"><a href="#" title="">môn 3</a></li>
-								<li class="menu_item"><a href="#" title="">môn 4</a></li>
-								<li class="menu_item"><a href="#" title="">môn 5</a></li>
-							</ul>
-						</li>
 						</ul>
+						<li class="menu_item"><a href="lien_he.html" title="">contact</a></li>
 					 </nav>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-12 hover_box" style="padding-top: 20px; position:relative; ">
+					<div class="box" style="position: absolute;">
+						<div class="contents">
+								
+							<a href="dang_ky.html" title=""><bottom type="submit" class="btn btn-primary">
+							sign up now</bottom></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	<!-- end logo -->
 	<!-- menu -->
 	</header>
+		<div id="box">
+			 <div id="ads-nav"><img src="img/close.png" id="loading" alt=""></div>
+		 
+		</div>
 	<!-- het thanh menu-->
 	<!-- sai ba -->
 	<div id="main">
@@ -90,7 +85,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div id="p_1"><p>Các Loại Hình Thể Thao</p></div>
+					<div id="p_1"><p>types of sport</p></div>
 					<div id="dot" class="text-center"></div>
 				</div>
 			</div>
@@ -105,7 +100,7 @@
 	  				<div class="overlay">
 	    				<div class="text">chi tiết môn học</div>
 	    			</div>
-    			</div>
+    			</div> 
 				<div class="sp col-md-4 col-sm-12 col-xs-12">
 	  					<a href="#"><img src="img/bong_ban.jpg" alt="Avatar" class="image"></a>
 	  				<div class="overlay">
@@ -162,43 +157,37 @@
 		<div class="container">
 			<div class="row">
 				<div  class="col-xs-12 col-sm-12 col-md-12 gioi_thieu text-center">
-					<h1 class="tieude">Gặp Gỡ Các Huấn Luyện Viên Hàng Đầu</h1>
+					<h1 class="tieude" style="font-family: sans-serif;">Meet The Toaches</h1>
 					<p class="p2"></p>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 ha_hlv text-center">
+				<div class="col-xs-12 col-sm-12 col-md-12">	
 					<div class="row">
-						<div class="anh_hlv col-md-6 col-sm-12 col-xs-12">
-							<a href="#"><img src="img/hlv_3.jpg" alt=""></a>
+						<div class=" ha_hlv text-center col-md-3 col-sm-6 col-xs-12">
+							 <a href="#" title=""><img src="img/misser.jpg" alt=""></a>
+							 <p>
+								In the interview with Japanese companies, always, you will first be asked to introduce yourself. Introducing yourself is basically for the interviewer to look at you as well as the way they create a more open, friendly atmosphere so that you can then self-PR as well as the presentation. Desires, your aspirations in the work</p>
 						</div>
-						<div class="gt_hlv col-md-6 col-sm-12 col-xs-12 "> Luis Enrique, 47 tuổi, CLB gần đây nhất Barcelona. </div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 ha_hlv text-center">
-						<div class="row">
-							<div class="anh_hlv col-md-6 col-sm-12 col-xs-12">
-								<a href="#"><img src="img/hlv_5.jpg" alt=""></a>
-							</div>
-							<div class="gt_hlv col-md-6 col-sm-12 col-xs-12 "> Luis Enrique, 47 tuổi, CLB gần đây nhất Barcelona. </div>
+						<div class=" ha_hlv text-center col-md-3 col-sm-6 col-xs-12">
+							 <a href="#" title=""><img src="img/misser.jpg" alt=""></a>
+							 <p>
+								In the interview with Japanese companies, always, you will first be asked to introduce yourself. Introducing yourself is basically for the interviewer to look at you as well as the way they create a more open, friendly atmosphere so that you can then self-PR as well as the presentation. Desires, your aspirations in the work</p>
 						</div>
-					</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 ha_hlv text-center">
-						<div class="row">
-							<div class="anh_hlv col-md-6 col-sm-12 col-xs-12">
-								<a href="#"><img src="img/hlv_2.jpg" alt=""></a>
-							</div>
-							<div class="gt_hlv col-md-6 col-sm-12 col-xs-12 "> Luis Enrique, 47 tuổi, CLB gần đây nhất Barcelona. </div>
+						<div class=" ha_hlv text-center col-md-3 col-sm-6 col-xs-12">
+							 <a href="#" title=""><img src="img/misser.jpg" alt=""></a>
+							 <p>
+								In the interview with Japanese companies, always, you will first be asked to introduce yourself. Introducing yourself is basically for the interviewer to look at you as well as the way they create a more open, friendly atmosphere so that you can then self-PR as well as the presentation. Desires, your aspirations in the work</p>
 						</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 ha_hlv text-center">
-						<div class="row">
-							<div class="anh_hlv col-md-6 col-sm-12 col-xs-12">
-								<a href="#"><img src="img/hlv_3.jpg" alt=""></a>
-							</div>
-							<div class="gt_hlv col-md-6 col-sm-12 col-xs-12 "> Luis Enrique, 47 tuổi, CLB gần đây nhất Barcelona. </div>
+
+						<div class=" ha_hlv text-center col-md-3 col-sm-6 col-xs-12">
+							 <a href="#" title=""><img src="img/misser.jpg" alt=""></a>
+							 <p>
+								In the interview with Japanese companies, always, you will first be asked to introduce yourself. Introducing yourself is basically for the interviewer to look at you as well as the way they create a more open, friendly atmosphere so that you can then self-PR as well as the presentation. Desires, your aspirations in the work</p>
 						</div>
 					</div>
 				</div>
-			</div>
+				<div  class="col-xs-12 col-sm-12 col-md-12 gioi_thieu text-right">
+					<h1 class="tieude"><a style="text-decoration: none; text-transform: uppercase; font-size:20px;" href="#" title="">  <<  see more  >></a></h1>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -208,7 +197,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div id="p_1"><p>Hình ảnh các clue </p></div>
+					<div id="p_1"><p>Look at the clubs </p></div>
 					<div id="dot" class="text-center"></div>
 				</div>
 			</div>
@@ -280,7 +269,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div id="p_1"><p>Các Hội Viên Nổi Tiếng</p></div>
+					<div id="p_1"><p>the famous members</p></div>
 					<div id="dot" class="text-center"></div>
 				</div>
 			</div>
@@ -345,7 +334,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12 video_cn">
-					<div id="p_1"><p>cảm nhập của học viên</p></div>
+					<div id="p_1"><p>feel the members</p></div>
 					<div id="dot" class="text-center"></div>
 				</div>
 
@@ -366,56 +355,56 @@
 		<div class="container">
 			<div class="row">
 				 <div class="col-md-3 col-sm-6 col-xs-12 div_footer">
-				 	<h3 class="h3_footer">liên hệ</h3>
+				 	<h3 class="h3_footer">contact</h3>
 				 	<ul>
 				 		<li>
 				 			<i  class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">tuyển dụng</a>
+				 			<a class="a_footer" href="#" title="">recruitment</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">góp ý-phản hồi</a>
+				 			<a class="a_footer" href="#" title="">Feedback Feedback</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">điều kiện sử dụng</a>
+				 			<a class="a_footer" href="#" title="">conditions of use</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">chính sách bảo mật</a>
+				 			<a class="a_footer" href="#" title="">Privacy Policy</a>
 				 		</li>
 				 	</ul>
 				 </div>
 
 				  <div class="col-md-3 col-sm-6 col-xs-12 div_footer">
-				  	<h3 class="h3_footer">dịch vụ</h3>
+				  	<h3 class="h3_footer">service</h3>
 				 	<ul>
 				 		<li>
 				 			<i  class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">các môn thể thao</a>
+				 			<a class="a_footer" href="#" title="">sports</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">các hoạt động chú ý</a>
+				 			<a class="a_footer" href="#" title="">attention activities</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">HLV cá nhân</a>
+				 			<a class="a_footer" href="#" title="">personal trainer</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">chăm sóc sứa khỏe</a>
+				 			<a class="a_footer" href="#" title="">health care</a>
 				 		</li>
 
 				 		<li>
 				 			<i class="fas fa-square"></i>
-				 			<a class="a_footer" href="#" title="">giảm cân</a>
+				 			<a class="a_footer" href="#" title="">weight loss</a>
 				 		</li>
 				 	</ul>
 				 </div>
@@ -423,15 +412,15 @@
 				 <div class="col-md-3 col-sm-6 col-xs-12 div_footer">
 					<h3 class="h3_footer">HOTLINE</h3>
 					<p class="gach_nganh"></p>
-					<h3 class="h3_sdt">000 000 000</h3>
+					<h3 class="h3_sdt"><a href="tel:+111111111" style="text-decoration:none; color:#fff;" title="">111 111 111</a></h3>
 					<p class="gach_nganh"></p>
-					<a class="a_footer a_i" href="#" title=""><i class="fab fa-facebook"></i></a>
-					<a class="a_footer a_i" href="#" title=""><i class="fab fa-twitter"></i></a>
-					<a class="a_footer a_i" href="#" title=""><i class="fab fa-skype"></i></a>
+					<a class="a_footer a_i" href="#" title="" style="margin-right: 10px;"><i style="padding-right: 5px; padding-left: 5px;" class="fab fa-facebook"></i></a>
+					<a class="a_footer a_i" href="#" title="" style="margin-right: 10px;"><i style="padding-right: 5px; color: pink; padding-left: 5px;" class="fab fa-twitter"></i></a>
+					<a class="a_footer a_i" href="#" title="" style="margin-right: 10px; background: #a8ebfe;"><i style="padding-right: 5px; padding-left: 5px;" class="fab fa-skype"></i></a>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-12 div_footer">
-					<h3 class="h3_footer"> đăng ký tập thử</h3>
+					<h3 class="h3_footer"> sign up now</h3>
 					<div class="form_foorter">
 						<form action="#" method="get" accept-charset="utf-8">
 							<div class="users">
@@ -442,7 +431,7 @@
 								<div class="div_input"><i class="fas fa-mobile-alt"></i></div>
 								<input type="text" class="input" name="sdt" required />
 							</div>
-							<button type="submit" class="btn">đăng ký tập thử</button>
+							<button type="submit" style="width: 182px;" class="btn btn-primary">enrollment test</button>
 						</form>
 					</div>
 				</div>
