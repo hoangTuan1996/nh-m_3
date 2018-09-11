@@ -1,0 +1,70 @@
+
+.blogger{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blog{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #fff;
+	background: url(../img/bk-blog.jpg);
+	background-attachment: fixed;
+}
+.topic-blog img{
+	width: 20%;
+}
+.blogger li{
+	list-style: none;
+	height: auto;
+	float: left;
+	width: 100%;
+}
+.topic-blog,.title,.topic-blog img{
+	float: left;
+}
+.topic-blog{
+	border: 1px solid #333;
+	box-shadow: 1px 1px 1px #333;
+	background: #fff;
+}
+.title{
+	width: 80%;
+	float: left;
+}
+.topic-blog,#title-blog1,#title-blog2,#title-blog3,#title-blog4{
+	padding: 0;
+}
+.topic-blog h3,.topic-blog h5{
+	margin-left: 30px;
+	color: #000;
+}
+#title-blog1:hover,#title-blog2:hover,#title-blog3:hover,#title-blog4:hover{
+	background: #7bc1f3;
+}
+.blog-content{
+	float: left;
+	padding-left: 50px;
+	padding-top: 50px;
+	padding-top: 20px;
+	margin: 0 auto;
+	background: #fff;
+	padding-bottom: 30px;
+	padding-right: 40px;
+	line-height: 25px;
+}
+.blog-content img{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	
+}
+.thu-gon{
+	font-size: 20px;
+	font-style: italic;
+	cursor: default;
+	float: right;
+	margin-top: 40px;
+	padding-right: 30px;
+}

@@ -1,0 +1,199 @@
+body{
+  background: center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.sp_head{
+  width: 100%;
+  background: url(../bg_img/bg_sport.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+
+}
+.sp_container{
+  width: 80%;
+  margin: 0 auto;
+}
+.sp_name {
+   transform: translateY(20px);
+  padding-left: 5%;
+}
+.sp_name p{
+  font-size: 40px;
+  color:#fff;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.sp_nav{
+
+  text-align: right;
+  transform: translateY(35px)
+}
+.sp_nav a{
+  text-decoration: none;
+  color: #ccddff;
+ 
+}
+.sp_nav p{
+    font-size: 20px;
+    color:#333;
+    text-transform: uppercase;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row_sp:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#sp_intro{
+  margin-top: 100px;
+  background-color:rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+#sp_intro p{
+  color: #fff;
+}
+.sp_des{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.sp_det{
+  width: 70%;
+  margin: 0 auto;
+}
+.sp_signup{
+  padding-top: 50px;
+   width: 70%;
+  margin: 0 auto;
+}
+.sp_signup button{
+  width: 200px;
+  height: 50px;
+  background: #ff3333;
+  color: #fff;
+  border-color: #ff3333;
+  font-size: 17px;
+  font-style: italic;
+}
+#sp_intro b{
+  color:blue;
+}
+@media only screen and (max-width: 992px){
+  .sp_name{
+    transform: translateY(40px)
+  }
+  .sp_nav{
+    transform: translateY(40px)
+  }
+  .sp_name p{
+    font-size: 20px;
+  }
+  .sp_nav a{
+    font-size: 20px;
+  }
+  .sp_nav p{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .sp_name{
+    transform: translateY(40px)
+  }
+  .sp_nav{
+    transform: translateY(40px)
+  }
+  .sp_name p{
+    font-size: 13px;
+  }
+  .sp_nav a{
+    font-size: 13px;
+  }
+  .sp_nav p{
+    font-size: 13px;
+  }
+}

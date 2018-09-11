@@ -8,7 +8,8 @@ img{
 	height: auto;
 }
 /*header ------------------------------------------ */
-header{
+
+#header{
 	width: 100%;
 	z-index: 99999;
 	background: #333;
@@ -17,6 +18,35 @@ header{
 	margin-bottom:50px;
 	box-shadow: 2px 2px 2px red;
 }
+/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+#header .hover_box .box{
+	height: auto;
+	width: 100%;
+	color: #fff;
+	text-transform:uppercase;
+	transform: translate(0%,0%);
+	box-sizing: border-box;
+	overflow: hidden;
+	border:2px solid #333;
+
+}
+#header .hover_box .box .contents{
+	border:2px solid #333;
+	text-align: center;	
+}
+#header .hover_box .box .contents .btn-primary{
+	background: #001e2d;
+	border:none;
+	border:2px solid red;
+}
+
+
+
+
+
+
+
+/*fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
 #logo{
 	padding-left: 0px;
 	padding-right: 0px;
@@ -39,27 +69,33 @@ header{
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-bottom: 45px;
 }
 #menu .menu_item ul {
 	position: absolute;
-	margin-top:5px;
+	margin-top:42px;
 	display: none;
 }
+#menu .menu_item{
+	padding-top:0px;
+}
 #menu .menu_item ul li.menu_item{
-	width: 100px;
+	width: 100%;
 	height: auto;
-	padding-left: 20px;
+	margin-left:0px;
 	padding-bottom:10px;
 	padding-top:10px;
+	padding-left:10px;
 }
-#menu .menu_item ul li.menu_item:hover{
+#menu .menu_item ul li.menu_item:hover {
 	background: blue;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #6600ff;
+	display: block;
 
 }
-#menu .menu_item:hover ul li.menu_item{
+#menu .menu_item:hover ul {
 	display: block;
+	background: pink;
 }
 #ul_main{
 	margin-left:-40px;
@@ -198,10 +234,17 @@ header{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border: 1px solid #ddd;
-	width: 530px;
 	margin-right: 20px;
+	width: 270px;
 	box-shadow: 2px 2px 2px 2px #333;
 }
+#huan_luyen_vien .ha_hlv a img{
+	margin-bottom: 20px;
+}
+
+
+
+
 .demo_clue{
 	float: left;
 	width: 100%;
@@ -281,7 +324,7 @@ header{
 footer{
 	width: 100%;
 	height: auto;
-	background: #272727;
+	background: #282525;
 }
  footer .div_footer{
  	margin-top: 50px;
@@ -307,13 +350,13 @@ footer .div_footer ul li .fas{
 }
 footer .div_footer ul li a{
 	text-decoration: none;
-	color:#604c4c;
+	color:#fff;
 	font-style: 20px;
 	line-height:20px;
 	text-transform: capitalize;
 }
 footer .div_footer ul li a:hover{
-	color:#fff;
+	color:red;
 }
 footer .div_footer .h3_sdt{
 	color:#f2ea0e;
@@ -326,20 +369,22 @@ footer .div_footer .gach_nganh{
 }
 footer .div_footer .a_i{
 	text-decoration: none;
-	color:#e5acac;
+	color:blue;
 	font-size: 35px;
 	margin-right: 20px;
 	border: 1px solid #fff;
 	padding: 5px;
+	background: #fff;
 }
 footer .div_footer .a_i:hover{
-	color:blue;
+	
 }
 
 footer .div_footer .form_foorter{
 	margin-top: 20px;
-	border: 1px solid red;
+	box-shadow: 2px 4px 2px #333;
 	padding-left: 20px;
+	background:#fff;
 	padding-top: 20px;
 	padding-bottom:20px;
 }
@@ -347,12 +392,12 @@ footer .div_footer .form_foorter .users{
 	margin-bottom: 10px;
 }
 footer .div_footer .form_foorter .users .div_input{
-	color:red;
+	color:#333;
 	float: left;
 	margin-right: 10px;
 }
 footer .div_footer .form_foorter .users .input{
-	margin-left: 2px;
+	margin-left: 3px;
 }
 footer .div_footer .form_foorter .btn{
 	margin-left: 25px;
@@ -366,3 +411,30 @@ footer .div_footer .form_foorter .btn{
 .fa-user,.fa-mobile-alt{
 	font-size: 150%;
 }
+
+#box{
+	float: left;
+	position: absolute;
+	z-index: 99999;
+	width: 50px;
+	height:50px;
+	background: red;
+	position: fixed;
+	top: 300px;
+	text-align: center;
+	font-size: 30px;
+	padding:5px;
+}
+#loading{
+	-webkit-animation: rotation 2s infinite linear;
+}
+#box #loading{
+			-webkit-animation: rotation 2s infinite linear;
+		}
+		@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}

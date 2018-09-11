@@ -1,0 +1,110 @@
+.in_head{
+	margin-left: 50px;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	padding: 50px 0 100px 0
+}
+.in_head h1{
+	font-size: 50px;
+	text-align: center;
+}
+.in_head:after{
+	content: '';
+  display: block;
+  border-bottom: 3px solid red;
+  width: 50%;
+  width: 0;
+  position: absolute;
+  left: 0;
+
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+
+}
+.in_head:hover:after{
+	width: 100%;
+}
+.list_in{
+
+	width: 100%;
+	background: #fff;
+	height: 2700px;
+}
+.cover{
+	float: left;
+	width: 100%;
+	height: auto;
+	background: ;
+	padding: 50px;
+}
+.cover:hover{
+	background: #8080ff;
+	transition: 0.4s 
+}
+.cover:hover h3{
+	color: #fff;
+	transition: 0.2s
+}
+.list_in a{
+	color: black
+}
+.sp_img{
+	height: auto;
+	float: left;
+	width: 45%;
+	text-align: center;
+}
+.sp_img img{
+	width: 65%;
+	height: 300px;
+
+}
+.sp_cont{
+	height: auto;
+	float: left;
+	width: 55%;
+}
+.sp_cont h3{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom:30px;
+	margin-top: -10px;
+	color:blue;
+}
+.sp_cont p{
+	font-size: 18px;
+}
+.name_sp{
+	width: 50%;
+	margin: 0 auto;
+}
+.des_sp{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 992px){
+	.sp_cont h3{
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+	.sp_cont p{
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.sp_cont{
+		display: none;
+	}
+	.sp_img{
+		width: 100%;
+	}
+}
+
+
+
